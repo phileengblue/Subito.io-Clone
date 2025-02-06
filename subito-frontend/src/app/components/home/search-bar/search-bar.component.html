@@ -13,9 +13,10 @@
           <span class="input-group-text"><i class="bi bi-grid"></i></span>
           <select class="form-select" [(ngModel)]="selectedCategory" (change)="emitSearchChanges()">
             <option selected>Tutte le categorie</option>
-            <option>Auto</option>
-            <option>Immobili</option>
-            <option>Elettronica</option>
+            <option>Motori</option>
+            <option>Market</option>
+            <option>Immobibili</option>
+            <option>Lavoro</option>
           </select>
         </div>
       </div>
@@ -23,7 +24,7 @@
         <label class="search-label">Dove?</label>
         <div class="input-group">
           <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
-          <input type="text" class="form-control" [(ngModel)]="location" (input)="emitSearchChanges()" placeholder="Comune, Provincia o Regione">
+          <input type="text" class="form-control" [(ngModel)]="location" (input)="emitSearchChanges()" placeholder="Tutta Italia">
         </div>
       </div>
     </div>
