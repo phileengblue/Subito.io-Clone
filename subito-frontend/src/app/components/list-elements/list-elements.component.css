@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-image {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .card-details {
+    padding: 15px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .card-location {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .card-description,
+  .card-rivenditor {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .card-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+ 
+  .icon-sm {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .phone-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .phone-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .btn-phone {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .btn-phone:hover {
+    background: darkred;
+  }
+  
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img-fluid {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-danger {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .fw-bold {
+    font-weight: 700;
+  }
+  
+  .text-muted {
+    font-size: 14px;
+  }
+  
+  

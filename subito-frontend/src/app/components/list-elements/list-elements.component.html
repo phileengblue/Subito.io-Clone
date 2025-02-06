@@ -1,1 +1,39 @@
-<p>list-elements works!</p>
+<div class="container mt-4">
+    <div class="row">
+      <div *ngFor="let card of cardElement" class="col-12">
+        <div class="card mb-3 shadow-sm">
+          <div class="row g-0">
+            
+            <div class="col-md-4">
+              <img [src]="card.Image" class="img-fluid rounded-start" alt="{{ card.Title }}">
+            </div>
+  
+            <div class="col-md-8 d-flex flex-column justify-content-between p-3">
+              <div>
+                <h5 class="fw-bold">{{ card.Title }}</h5>
+                <p class="text-muted small">{{ card.LocationHour }}</p>
+                
+                <p *ngIf="card.price" class="text-danger fs-5 fw-bold">{{ card.price }}</p>
+                <p *ngIf="card.description" class="text-secondary small">{{ card.description }}</p>
+                <p *ngIf="card.rivenditor" class="fw-bold text-primary">{{ card.rivenditor }}</p>
+              </div>
+  
+              <div class="d-flex align-items-center mt-2">
+                <img *ngIf="card.speditionLogo" [src]="card.speditionLogo" class="me-2 icon-sm" alt="Spedizione">
+                <img *ngIf="card.heartLogo" [src]="card.heartLogo" class="icon-sm" alt="Preferiti">
+              </div>
+  
+              <div *ngIf="card.phoneLogo" class="mt-2 d-flex align-items-center">
+                <img [src]="card.phoneLogo" class="icon-sm me-2" alt="Telefono">
+                <button *ngIf="card.bottonSeeNumber" class="btn btn-danger btn-sm">
+                  {{ card.bottonSeeNumber }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
