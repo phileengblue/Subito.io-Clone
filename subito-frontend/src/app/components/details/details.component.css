@@ -74,6 +74,9 @@
     background-color: black;
 }
 .carousel-thumbnails {
+  position: relative;
+  bottom: 112px;
+  left: 17px;
     display: flex;
     justify-content: left;
     margin-top: 10px;
@@ -91,8 +94,30 @@
 }
 
 .custom-divider {
-    border: 1;
+  border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    bottom: 105px;
     height: 1px;
     background-color: #ddd;
     margin: 20px 0;
+    width: 550px;
+    left: 22px;
+}
+
+/*section column*/
+
+.no-border{
+
+  border: none;
+  
+}
+
+.button-mod{
+
+  width: 110%;
+  height: 50px;
+  background-color: #F2A700;
+  border: none;
+  font-family: 'LFTEtica';
+
 }

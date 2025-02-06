@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'LFTEtica';
+    src: url('/Subito.io-Clone/subito-frontend/src/assets/font/LFTEtica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'LFTEtica', sans-serif;
+}
