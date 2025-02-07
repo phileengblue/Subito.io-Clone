@@ -1,0 +1,50 @@
+<div class="filter-wrapper">
+  <div class="filter-container">
+    <h4 class="filter-title">Filtri ricerca</h4>
+    
+    <div class="filter-section">
+      <div class="d-flex justify-content-between align-items-center">
+        <label class="filter-label">Spedizione</label>
+        <div class="custom-switch-container">
+          <input type="checkbox" id="switchSpedizione" class="custom-switch" [(ngModel)]="isSpedizioneChecked" (change)="emitFilterChanges()">
+          <label for="switchSpedizione" class="custom-switch-label">
+            <span class="custom-switch-circle">
+              <i class="bi" [ngClass]="isSpedizioneChecked ? 'bi-check-lg text-danger' : 'bi-x-lg text-dark'"></i>
+            </span>
+          </label>
+        </div>
+      </div>
+      <p class="filter-description">Solo annunci con spedizione disponibile</p>
+    </div>
+    
+    <div class="filter-section">
+      <div class="d-flex justify-content-between align-items-center">
+        <label class="filter-label">Restringi ricerca</label>
+        <div class="custom-switch-container">
+          <input type="checkbox" id="switchTitolo" class="custom-switch" [(ngModel)]="isTitoloChecked" (change)="emitFilterChanges()">
+          <label for="switchTitolo" class="custom-switch-label">
+            <span class="custom-switch-circle">
+              <i class="bi" [ngClass]="isTitoloChecked ? 'bi-check-lg text-danger' : 'bi-x-lg text-dark'"></i>
+            </span>
+          </label>
+        </div>
+      </div>
+      <p class="filter-description">Cerca solo nel titolo</p>
+    </div>
+    
+    <div class="filter-section">
+      <label class="filter-label">Tipo di annuncio</label>
+      <div class="announcement-container">
+        <div *ngFor="let tipo of tipiAnnuncio" class="announcement-item d-flex justify-content-between">
+          <label class="form-check-label" [for]="'tipo-' + tipo">{{ tipo }}</label>
+          <input class="form-check-input radio-custom" type="radio" 
+            name="tipoAnnuncio" 
+            [id]="'tipo-' + tipo" 
+            [value]="tipo" 
+            [(ngModel)]="selectedTipoAnnuncio" 
+            (click)="updateTipoAnnuncio(tipo)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

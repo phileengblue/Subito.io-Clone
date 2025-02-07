@@ -1,0 +1,37 @@
+<div class="search-wrapper">
+    <div class="search-container">
+      <div class="search-group">
+        <label class="search-label">Cosa cerchi?</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" [(ngModel)]="searchQuery" (input)="emitSearchChanges()" placeholder="Vespa, iPhone, Bilocale">
+        </div>
+      </div>
+      <div class="search-group">
+        <label class="search-label">In quale categoria?</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-grid"></i></span>
+          <select class="form-select" [(ngModel)]="selectedCategory" (change)="emitSearchChanges()">
+            <option selected>Tutte le categorie</option>
+            <option>Motori</option>
+            <option>Market</option>
+            <option>Immobibili</option>
+            <option>Lavoro</option>
+            <option>Elettronica</option>
+            <option>Arredamento</option>
+            <option>Sport</option>
+            <option>Giochi</option>
+            <option>Salute</option>
+            <option>Accessori</option>
+          </select>
+        </div>
+      </div>
+      <div class="search-group">
+        <label class="search-label">Dove?</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+          <input type="text" class="form-control" [(ngModel)]="location" (input)="emitSearchChanges()" placeholder="Tutta Italia">
+        </div>
+      </div>
+    </div>
+</div>
