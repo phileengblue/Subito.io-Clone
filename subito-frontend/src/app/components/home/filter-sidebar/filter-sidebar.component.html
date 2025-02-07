@@ -36,8 +36,13 @@
       <label class="filter-label">Tipo di annuncio</label>
       <div class="announcement-container">
         <div *ngFor="let tipo of tipiAnnuncio" class="announcement-item d-flex justify-content-between">
-          <label class="form-check-label">{{ tipo }}</label>
-          <input class="form-check-input radio-custom" type="radio" name="tipoAnnuncio" [value]="tipo" [(ngModel)]="selectedTipoAnnuncio" (change)="emitFilterChanges()">
+          <label class="form-check-label" [for]="'tipo-' + tipo">{{ tipo }}</label>
+          <input class="form-check-input radio-custom" type="radio" 
+            name="tipoAnnuncio" 
+            [id]="'tipo-' + tipo" 
+            [value]="tipo" 
+            [(ngModel)]="selectedTipoAnnuncio" 
+            (click)="updateTipoAnnuncio(tipo)">
         </div>
       </div>
     </div>

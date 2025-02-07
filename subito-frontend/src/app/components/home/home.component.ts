@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  filters = {
+    isSpedizioneChecked: false,
+    isTitoloChecked: false,
+    selectedTipoAnnuncio: 'In vendita'
+  };
+
+  onFiltersChanged(newFilters: any) {
+    this.filters = { ...newFilters };
+    console.log("Filtri ricevuti da FilterSidebarComponent:", this.filters);
+
+  }
 
 }
