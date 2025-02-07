@@ -1,0 +1,200 @@
+.total {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/*sezione head*/
+
+.p-custom {
+  padding: 19px;
+}
+.market-logo {
+  width: 230px;
+  height: 36px;
+}
+.btn-add-ad {
+  background-color: #ff5a5f;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-add-ad:hover {
+  background-color: #e04e53;
+}
+.header-icon-add-ad svg {
+  margin-right: 8px;
+}
+
+/*sezione nav*/
+
+.breadcrumb-item img {
+  margin: 0 5px;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f5a623;
+  font-weight: bold;
+  padding: 6px 8px;
+  border: 1px solid #d0bfa3;
+  border-radius: 5px;
+  background-color: white;
+  width: 182px;
+}
+
+.btn-back:hover {
+  background-color: #fff3e0;
+  color: #d48c1a;
+}
+
+.btn-back svg {
+  margin-right: 8px;
+  fill: #f5a623;
+}
+
+
+/*section 1*/
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 13px;
+    
+}
+.carousel img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    background-color: black;
+}
+.carousel-thumbnails {
+  position: relative;
+  bottom: 112px;
+  left: 17px;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+.carousel-thumbnails img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 2px solid transparent;
+}
+.carousel-thumbnails img.active {
+    border: 2px solid #f5a623;
+}
+
+.custom-divider {
+  border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    bottom: 105px;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+    width: 550px;
+    left: 22px;
+}
+
+/*section column*/
+
+.no-border{
+
+  border: none;
+  
+}
+
+.button-mod{
+
+  width: 110%;
+  height: 50px;
+  background-color: #F2A700;
+  border: none;
+  font-family: 'LFTEtica';
+
+}
+
+.padding-mod{
+
+  padding: 10px;
+  width: 297px;
+}
+
+.img-payment{
+
+  width: 25px;
+}
+
+.space{
+
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.btn-link {
+  text-decoration: none; /* Rimuove la sottolineatura tipica dei link */
+}
+.text-warning {
+  color: #FFA500 !important; /* Colore arancione per rispecchiare l'immagine */
+}
+.fw-bold {
+  font-weight: bold; /* Testo in grassetto */
+}
+.botton-buy{
+
+  position: relative;
+  top: 1px;
+  right: 12px;
+}
+
+.font-button-contatta{
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+/*section descrption*/
+
+.move-section{
+
+  position: relative;
+  bottom: 145px;
+}
+
+.border-descrption{
+
+  border: none;
+}
+
+.hr-mod-weight{
+
+  width: 620px;
+}
+.move-section-1{
+
+  position: relative;
+  bottom: 130px;
+  left: 10px;
+}
+.width-date{
+
+  width: 644px;
+}
+
+.position-vendor{
+
+  width: 617px;
+  position: relative;
+  bottom: 150px;
+  right: 182px;
+}
+

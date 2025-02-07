@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FilterSidebarComponent } from './components/home/filter-sidebar/filter-sidebar.component';
 import { SearchBarComponent } from './components/home/search-bar/search-bar.component';
 import { ListElementsComponent } from './components/list-elements/list-elements.component';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListElementsComponent } from './components/list-elements/list-elements.
     HomeComponent,
     FilterSidebarComponent,
     SearchBarComponent,
-    ListElementsComponent
+    ListElementsComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
