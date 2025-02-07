@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-list-elements',
@@ -19,8 +19,11 @@ export class ListElementsComponent implements OnInit, OnChanges {
     location: ''
   };
 
+  @Output() cardClicked = new EventEmitter<any>();
+
   cardElement = [
     {
+      "id": 1, 
       "Image": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/76/763cfcfe-aee6-48cf-8532-bd9050e277ef?rule=card-desktop-new-small-2x-auto",
       "Title": "Bicicletta da corsa",
       "LocationHour": "Palermo - 29 gen alle 20:30",
@@ -41,6 +44,7 @@ export class ListElementsComponent implements OnInit, OnChanges {
       "category": "Elettronica"
     },
     {
+      "id": 2, 
       "Image": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/1f/1f2a08ae-c407-4ed3-990c-3cb185ebc817?rule=card-desktop-new-small-2x-auto",
       "Title": "Divano 3 posti",
       "LocationHour": "Genova - 16 gen alle 11:59",
@@ -51,6 +55,7 @@ export class ListElementsComponent implements OnInit, OnChanges {
       "category": "Giochi"
     },
     {
+      "id": 3, 
       "Image": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/28/285bb541-3be2-41f8-8eca-ae03e33a5b35?rule=card-desktop-new-small-2x-auto",
       "Title": "MacBook Pro",
       "LocationHour": "Roma - 14 gen alle 21:21",
@@ -61,6 +66,7 @@ export class ListElementsComponent implements OnInit, OnChanges {
       "category": "Lavoro"
     },
     {
+      "id": 4, 
       "Image": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/1f/1f2a08ae-c407-4ed3-990c-3cb185ebc817?rule=card-desktop-new-small-2x-auto",
       "Title": "Divano 3 posti",
       "LocationHour": "Bologna - 11 gen alle 8:15",
@@ -1546,6 +1552,11 @@ export class ListElementsComponent implements OnInit, OnChanges {
       console.log("Filtri ricevuti in ListElementsComponent:", this.filters, this.searchFilters);
       this.applyFilters();
     }
+  }
+
+  onCardClick(item: any): void {
+    console.log("Elemento cliccato:", item);
+    this.cardClicked.emit(item); 
   }
 
   applyFilters() {
