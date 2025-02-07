@@ -12,10 +12,19 @@ export class HomeComponent {
     selectedTipoAnnuncio: 'In vendita'
   };
 
+  searchFilters = {
+    searchQuery: '',
+    selectedCategory: 'Tutte le categorie',
+    location: ''
+  };
+
   onFiltersChanged(newFilters: any) {
     this.filters = { ...newFilters };
     console.log("Filtri ricevuti da FilterSidebarComponent:", this.filters);
-
   }
 
+  onSearchChanged(searchData: any) {
+    this.searchFilters = { ...searchData };
+    console.log("Filtri ricevuti da SearchBarComponent:", this.searchFilters);
+  }
 }

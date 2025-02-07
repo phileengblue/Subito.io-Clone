@@ -1,39 +1,47 @@
+  <p class="text-muted">{{ totalResults }} risultati</p>
+  <h2 class="fw-bold">Annunci</h2>
+
 <div class="container mt-4">
-    <div class="row">
-      <div *ngFor="let card of filteredElements" class="col-12">
-        <div class="card mb-3 shadow-sm">
-          <div class="row g-0">
-            
-            <div class="col-md-4">
-              <img [src]="card.Image" class="img-fluid rounded-start" alt="{{ card.Title }}">
+  <div class="row">
+    <div *ngFor="let card of filteredElements" class="col-12">
+      <div class="card mb-3 shadow-sm position-relative d-flex align-items-stretch">
+
+      
+        <div class="heart-container">
+          <img *ngIf="card.heartLogo" [src]="card.heartLogo" class="heart-icon" alt="Preferiti">
+        </div>
+
+       
+        <div class="img-container">
+          <img [src]="card.Image" class="card-image" alt="{{ card.Title }}">
+        </div>
+
+       
+        <div class="card-content d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="fw-bold title-text">{{ card.Title }}</h5>
+            <p class="text-muted small">{{ card.LocationHour }}</p>
+
+            <div class="d-flex align-items-center">
+              <p *ngIf="card.price" class="text-danger fs-6 fw-bold me-2">{{ card.price }}</p>
+              <img *ngIf="card.speditionLogo" [src]="card.speditionLogo" class="icon-sm ms-2" alt="Spedizione">
             </div>
-  
-            <div class="col-md-8 d-flex flex-column justify-content-between p-3">
-              <div>
-                <h5 class="fw-bold">{{ card.Title }}</h5>
-                <p class="text-muted small">{{ card.LocationHour }}</p>
-                
-                <p *ngIf="card.price" class="text-danger fs-5 fw-bold">{{ card.price }}</p>
-                <p *ngIf="card.description" class="text-secondary small">{{ card.description }}</p>
-                <p *ngIf="card.rivenditor" class="fw-bold text-primary">{{ card.rivenditor }}</p>
-              </div>
-  
-              <div class="d-flex align-items-center mt-2">
-                <img *ngIf="card.speditionLogo" [src]="card.speditionLogo" class="me-2 icon-sm" alt="Spedizione">
-                <img *ngIf="card.heartLogo" [src]="card.heartLogo" class="icon-sm" alt="Preferiti">
-              </div>
-  
-              <div *ngIf="card.phoneLogo" class="mt-2 d-flex align-items-center">
-                <img [src]="card.phoneLogo" class="icon-sm me-2" alt="Telefono">
-                <button *ngIf="card.bottonSeeNumber" class="btn btn-danger btn-sm">
-                  {{ card.bottonSeeNumber }}
-                </button>
-              </div>
+
+            <p *ngIf="card.description" class="text-secondary small">{{ card.description }}</p>
+          </div>
+
+          <div *ngIf="card.rivenditor" class="mt-2 d-flex align-items-center justify-content-between">
+            <p class="fw-bold text-danger rivenditor-text">{{ card.rivenditor }}</p>
+            <div class="d-flex align-items-center">
+              <img *ngIf="card.phoneLogo" [src]="card.phoneLogo" class="icon-sm me-2" alt="Telefono">
+              <button *ngIf="card.bottonSeeNumber" class="btn btn-danger btn-sm">
+                {{ card.bottonSeeNumber }}
+              </button>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
-  
-  
+</div>

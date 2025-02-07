@@ -1,4 +1,4 @@
-<app-search-bar></app-search-bar>
+<app-search-bar (searchChanged)="onSearchChanged($event)"></app-search-bar>
 <div class="d-flex justify-content-center align-items-center">
     <div class="container custom-container border-top">
         <div class="row w-100 h-100">
@@ -6,7 +6,7 @@
                 <app-filter-sidebar (filtersChanged)="onFiltersChanged($event)"></app-filter-sidebar>
             </div>
             <div class="col-9 d-flex align-items-center justify-content-center">
-                <app-list-elements [filters]="filters"></app-list-elements>
+                <app-list-elements [filters]="filters" [searchFilters]="searchFilters"></app-list-elements>
             </div>
         </div>
     </div>
