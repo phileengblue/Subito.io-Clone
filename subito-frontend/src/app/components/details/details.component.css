@@ -121,3 +121,80 @@
   font-family: 'LFTEtica';
 
 }
+
+.padding-mod{
+
+  padding: 10px;
+  width: 297px;
+}
+
+.img-payment{
+
+  width: 25px;
+}
+
+.space{
+
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.btn-link {
+  text-decoration: none; /* Rimuove la sottolineatura tipica dei link */
+}
+.text-warning {
+  color: #FFA500 !important; /* Colore arancione per rispecchiare l'immagine */
+}
+.fw-bold {
+  font-weight: bold; /* Testo in grassetto */
+}
+.botton-buy{
+
+  position: relative;
+  top: 1px;
+  right: 12px;
+}
+
+.font-button-contatta{
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+/*section descrption*/
+
+.move-section{
+
+  position: relative;
+  bottom: 145px;
+}
+
+.border-descrption{
+
+  border: none;
+}
+
+.hr-mod-weight{
+
+  width: 620px;
+}
+.move-section-1{
+
+  position: relative;
+  bottom: 130px;
+  left: 10px;
+}
+.width-date{
+
+  width: 644px;
+}
+
+.position-vendor{
+
+  width: 617px;
+  position: relative;
+  bottom: 150px;
+  right: 182px;
+}
+
