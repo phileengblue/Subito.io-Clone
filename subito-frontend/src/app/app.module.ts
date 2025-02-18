@@ -10,6 +10,8 @@ import { FilterSidebarComponent } from './components/home/filter-sidebar/filter-
 import { SearchBarComponent } from './components/home/search-bar/search-bar.component';
 import { ListElementsComponent } from './components/list-elements/list-elements.component';
 import { DetailsComponent } from './components/details/details.component';
+import { NavbarComponent } from './components/home/navbar/navbar.component';
+import { FooterComponent } from './components/home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DetailsComponent } from './components/details/details.component';
     FilterSidebarComponent,
     SearchBarComponent,
     ListElementsComponent,
-    DetailsComponent
+    DetailsComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

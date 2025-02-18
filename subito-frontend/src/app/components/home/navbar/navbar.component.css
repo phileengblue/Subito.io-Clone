@@ -1,0 +1,28 @@
+
+.logo-img {
+    width: 144px;
+}
+
+.bg-light {
+    background-color: rgb(255, 255, 255) !important;
+}
+.btn-outline-secondary {
+    border-radius: 4px;
+}
+.btn-link {
+    text-decoration: none;
+}
+.dark-theme {
+    background-color: #343a40;
+    color: white;
+}
+.dark-theme .navbar {
+    background-color: #212529 !important;
+}
+.dark-theme .btn-outline-secondary {
+    color: white;
+    border-color: white;
+}
+.dark-theme .btn-link {
+    color: #adb5bd;
+}

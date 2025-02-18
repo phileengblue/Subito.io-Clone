@@ -77,6 +77,7 @@ export class ListElementsComponent implements OnInit, OnChanges {
       "category": "Giochi"
     },
     {
+      "id": 5, 
       "Image": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/ea/ea02054c-67b8-4df8-aaa2-0654410c4b08?rule=card-desktop-new-small-2x-auto",
       "Title": "Dispositivo Medico",
       "LocationHour": "Palermo - 17 gen alle 22:50",
@@ -87,6 +88,7 @@ export class ListElementsComponent implements OnInit, OnChanges {
       "category": "Elettronica"
     },
     {
+      "id": 6, 
       "Image": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/76/763cfcfe-aee6-48cf-8532-bd9050e277ef?rule=card-desktop-new-small-2x-auto",
       "Title": "Smartwatch Apple",
       "LocationHour": "Napoli - 22 gen alle 13:11",
