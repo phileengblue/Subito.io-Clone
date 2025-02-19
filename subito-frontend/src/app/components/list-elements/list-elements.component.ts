@@ -31,7 +31,7 @@ export class ListElementsComponent implements OnInit, OnChanges {
       "speditionLogo": "https://st2.depositphotos.com/2068621/5998/v/450/depositphotos_59980863-stock-illustration-fast-delivery-truck-icon-on.jpg",
       "heartLogo": "https://static.vecteezy.com/ti/vettori-gratis/p1/28860715-cuore-icona-concetto-di-amore-lineare-cuore-icona-vettoriale.jpg",
       "tipoAnnuncio": "In regalo",
-      "category": "Salute"
+      "category": "Salute",
     },
     {
       "Image": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/e8/e8107d6e-4908-434c-9abd-98dab1fca8ea?rule=card-desktop-new-small-2x-auto",
