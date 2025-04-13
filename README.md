@@ -18,7 +18,7 @@ Questo progetto open-source replica l'esperienza offerta da piattaforme di intra
 ---
 
 ### 🔍 Page details
-![Details](./assets/Pagina%20Details.png)
+![Page Details](./assets/Page%20Details.png)
 
 ---
 
