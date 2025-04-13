@@ -8,7 +8,19 @@ Questo progetto open-source replica l'esperienza offerta da piattaforme di intra
 - **Frontend**:  
   - Angular 16  
   - Bootstrap/Tailwind(?)
-  - NG Zorro  
+  - NG Zorro
+ 
+## **Screenshots**
+
+### 🏠 Homepage
+![Homepage](./assets/Homepage.png)
+
+---
+
+### 🔍 Page details
+![Details](./assets/Pagina%20Details.png)
+
+---
 
 ## **Autori e riconoscimenti**
 - Filippo Gurrata 
