@@ -13,12 +13,12 @@ Questo progetto open-source replica l'esperienza offerta da piattaforme di intra
 ## **Screenshots**
 
 ### 🏠 Homepage
-![Homepage](./assets/Page%20Details.png)
+![Homepage](./assets/Homepage.png)
 
 ---
 
 ### 🔍 Page details
-![Page Details](./assets/Homepage.png)
+![Page Details](./assets/Page%20Details.png)
 
 ---
 
